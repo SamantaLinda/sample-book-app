@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building of node application is starting ...'
+            }
+        }
+        stage('Deploy to DEV') {
+            steps {
+                echo 'Deployment to DEV has started'
+            }
+        }
+        stage('Test on DEV') {
+            steps {
+                echo 'Testing to DEV has started'
+            }
+        }
+         stage('Deploy to STG') {
+            steps {
+                echo 'Deployment to STG has started'
+            }
+        }
+        stage('Test on STG') {
+            steps {
+                echo 'Testing to STG has started'
+            }
+        }
+         stage('Deploy to PRO') {
+            steps {
+                echo 'Deployment to PRO has started'
+            }
+        }
+        stage('Test on PRO') {
+            steps {
+                echo 'Testing to PRO has started'
+            }
+        }
+    }
+}
