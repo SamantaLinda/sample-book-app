@@ -59,7 +59,6 @@ pipeline {
 
 def build(){
     echo "Building of node appliaction ir starting.."
-    bat "ls"
     bat "npm install"
 }
 
