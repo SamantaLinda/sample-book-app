@@ -55,11 +55,11 @@ pipeline {
 }
 
 def deploy(String environment){
-    echo "Deployment to $(environmrnt) has started.."
+    echo "Deployment to ${environment} has started.."
 }
 
 def test(String environment){
-    echo "Testing to $(environmrnt) has started.."
+    echo "Testing to ${environment} has started.."
 }
 
 def build(){
